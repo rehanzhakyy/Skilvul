@@ -13,7 +13,7 @@
 6. Commit with the message "adding first.txt"
 > git commit -m "adding first.txt
 7. Check out your commit with `git log`
-> git log --oneline
+> git log
 8. Create another file called `second.txt`
 > touch second.txt
 9.  Add `second.txt` to the staging area
@@ -21,7 +21,7 @@
 10. Commit with the message "adding second.txt"
 > git commit -m "adding second.txt"
 11. Remove the `first.txt` file
-> rm -r first.txt
+> rm first.txt
 12. Add this change to the staging area
 > git add .
 13. Commit with the message "removing first.txt"
