@@ -1,0 +1,10 @@
+## Answer
+
+Answer the following questions
+
+1. What is the difference between `git reset` and `git revert`. When would you use one over the other?
+> `git reset` is a Git command that allows you to move branch pointers and the HEAD to a different commit, potentially discarding commits and making it a potentially risky option for local changes. On the other hand, `git revert` is used to create new commits that undo changes introduced by specific commits while preserving the commit history, making it a safer choice for collaborative environments where maintaining a clean history is important.
+2. What is the difference between `git merge` and `git rebase`. When would you use one over the other?
+> `git merge` is used to combine changes from one branch into another by creating merge commits, preserving the original commit history, and is suitable for maintaining a clear and branching history. On the other hand, `git rebase` is employed to integrate changes by moving or "replaying" commits from one branch on top of another, resulting in a linear commit history, making it useful for creating a cleaner and more straightforward history, particularly for feature branches, but it should be used cautiously in shared branches to avoid conflicts and confusion. The choice between them depends on your project's needs and the desired commit history structure.
+3. What is the difference between `git stash pop` and `git stash apply`. When would you use one over the other?
+> `git stash pop` applies the changes from the most recent stash and removes that stash from the list, making it a convenient choice when you're confident you won't need those stashed changes anymore. On the other hand, `git stash apply` also applies the changes but keeps the stash, allowing you to reuse or review the changes before deciding to remove the stash, making it a safer option if you're unsure about discarding the stash or need to apply it again later. Your choice depends on whether you want to immediately clean up your stash or keep it for potential future use or review.
